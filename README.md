@@ -9,4 +9,4 @@ and innovative environment at CodSoft, which encouraged me to push my boundaries
 Project Links
 Calculator - https://krishnansh05.github.io/Calculator/
 Landing Page - https://krishnansh05.github.io/Car-Sale-Landing-Page/
-Personal Profile - 
+Personal Profile - https://krishnansh05.github.io/Personal-Portfolio/
