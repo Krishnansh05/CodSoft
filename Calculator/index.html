@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 class="heading">Krishnansh Gupta's Calculator Project</h1>
+    <div class="container">  <!--  Main container which has the calculator -->
+        <div class="calculator">
+            <h1 class="text">CALCULATOR</h1> 
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                
+                <div>
+                    <input type="button" value="AC"  onclick="display.value = ''" class="button sty"> <!-- Here display value is assigned as ''(null) because All Clear button removes everything -->
+                    <input type="button" value="AE" onclick= "display.value = display.value.toString().slice(0,-1)" class="button sty"> <!-- The display value is first converted into string and then the slice() function is used to eliminate the last most digit -->
+                    <input type="button" value="." onclick="display.value += '.' " class="button">
+                    <input type="button" value="/" onclick="display.value += '/' " class="button">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' " class="button">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' "> 
+                    <input type="button" value="-" onclick="display.value += '-' " class="button">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' "> 
+                    <input type="button" value="+" onclick="display.value += '+' " class="button">
+                </div>
+
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="=" class="button equal" onclick="display.value = eval(display.value)"> <!-- The equal to button performs the desired calculations on click of the user as eval() function is used. -->
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <footer class="cc">
+        <p>Copyright © 2024 Krishnansh Gupta.</p>
+    </footer>
+</body>
+</html>

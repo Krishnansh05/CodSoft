@@ -1,0 +1,129 @@
+/* Editor - Krishnansh Gupta */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.heading
+{
+    color: #424874;
+    text-align: center;
+    margin-bottom: 0.5%;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: #424874;
+    padding: 20px;
+    border-radius: 10px;
+    height: 550px;
+    width: 300px;
+}
+
+.text{
+    font-family: "Sono", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #DCD6F7;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 72px;
+    height: 72px;
+    margin-top: 7px;
+    border-radius: 30px;
+    background-color: #b9b0e1;
+    font-size: 25px;
+    color: #F4EEFF;
+    cursor: pointer;
+}
+
+.calculator form input:hover{
+    background-color: #9ba0cc;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+form .display input{
+    flex: 1;
+    text-align: right;
+    font-size: 30px;
+    border-radius: none;
+    border-radius: 5px; 
+    padding: 0px 10px;
+    animation: none;
+}
+
+form input.equal{
+    width: 148px 
+}
+
+form input.button{
+    background-color: #A6B1E1;
+}
+
+form input.sty{
+    color: yellow;
+}
+.cc{
+    text-align: center;
+}
+
+@media(max-width:600px)
+{
+    .heading
+    {
+        font-size: 28px;
+    }
+    .calculator{
+        padding: 15px;
+        height: 440px;
+        width: 240px;
+    }
+
+    .calculator form input{
+        width: 56px;
+        height: 56px;
+        border-radius: 22px;
+        margin-top: 6px;
+        font-size: 20px;
+    }
+
+    form input.equal{
+        width: 116px 
+    }
+
+    .text{
+        font-size: 30px;
+        margin-top: 3px;
+        margin-bottom: 15px;
+    }
+
+    form .display input{
+        flex: 1;
+        text-align: right;
+        font-size: 30px;
+        border-radius: none;
+        border-radius: 4px; 
+        padding: 0px 10px;
+        animation: none;
+    }
+}
