@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Profile</title>
+    <script src="https://kit.fontawesome.com/0bcfffb017.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="main">
+            <div class="container">
+                <nav>
+                        <img src="./images/Logo.png" class="logo">
+                    <ul id="sidemenu">
+                            <li><a href="#main">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                    <div class="header-text">
+                        <p>Web Developer</p>
+                        <h1>Hi, I'm <span>Krishnansh </span> Gupta<br> I am from India</h1>
+                    </div>
+            </div>
+        </div>
+
+    <!-----------------  About ---------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <img src="./images/About-Image.jpeg">
+                    </div>
+                    <div class="col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am a dedicated and reliable 19-year-old Front-End Web Developer with a profound passion for coding and technology. Serving as the Technical Head of my school, I have refined my leadership and communication abilities, ensuring adept project management and fostering effective teamwork.</p>
+
+                        <div class="tab-title">
+                            <p class="tab tab-current" onclick=" opentab('skills')">Skills</p>
+                            <p class="tab" onclick=" opentab('experience')">Experience</p>
+                            <p class="tab" onclick=" opentab('education')">Education</p>
+                        </div>
+                        <!-- Skills -->
+                        <div class="tab-contents current" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                                <li><span>Editing</span><br>Photo and Video Editing</li>
+                                <li><span>Content Writing</span><br>Websites write-ups and content provider</li>
+                            </ul>
+                        </div>
+                        <!-- Experience -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024</span><br>Web Development Intern @Unified Mentor Pvt. Ltd. </li>
+                                <li><span>2024</span><br>Web Development Intern @CodSoft</li>
+                                <li><span>2022-2024</span><br>Technical Head @Dr. Virendra Swarup Public School</li>
+                            </ul>
+                        </div>
+                        <!-- Education -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2009-2024</span><br>10+2 from Dr. Virendra Swarup Public School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!----------------- Projects ------------------->
+
+<div id="project">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="project-list">
+            <div class="projects">
+                <img src="./images/Project-1.jpg">
+                <div class="write-up">
+                    <h1>Calculator Project</h1>
+                    <br>
+                    <p>A basic calculator that performs simple arithmetic operations seamlessly.</p>
+                    <br>
+                    <a href="https://krishnansh05.github.io/Calculator/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                    
+            </div>
+            <div class="projects">
+                <img src="./images/Project-2.jpg">
+                <div class="write-up">
+                    <h1>To-Do List</h1>
+                    <br>
+                    <p>A Simple To-Do List web app that allows users to add their day-to-day task and has very clean and impressive design</p>
+                    <br>
+                    <a href="https://krishnansh05.github.io/To-Do-List/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./images/Project-3.jpeg">
+                <div class="write-up">
+                    <h1>Car Sale Landing Page</h1>
+                    <br>
+                    <p>A sophisticated car sale landing page which offers a diverse selection of quality cars, enabling users to effortlessly search and find their dream vehicle.</p>
+                    <br>
+                    <a href="https://krishnansh05.github.io/Car-Sale-Landing-Page/" target="_blank">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <h1 class="proj">More Projects will be added soon</h1>
+</div>
+
+<!----------------- Contact Page--------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="tab-1">
+                <h1 class="subtitle">Contact Me</h1>
+                    <!-- ---- Tel No. ---- -->
+                <p><span>CALL ME</span><br><a href="tel:+91 7275298901">+91 7275298901</a></p>
+                    <!-- ---- Mail ID ---- -->
+                <p><span>MAIL ME</span><br><a href="mailto:krishnanshg2005@gmail.com">krishnanshg2005@gmail.com</a></p>
+
+                <div class="links">
+                    <!-- ---- LinkedIn ---- -->
+                <a href="https://www.linkedin.com/in/krishnansh-gupta-4678532a7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2owgCLntTWyWplkfoTdXUw%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- ---- Instagram ---- -->
+                <a href="https://www.instagram.com/https._.krishshsh?igsh=MXQxZms1dzNpaTQ0cw=="><i class="fa-brands fa-instagram"></i></a>
+                    <!-- ---- Github ---- -->
+                <a href="https://github.com/Krishnansh05" class="icons" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            <a href="./images/My CV - Krishnansh Gupta.pdf" download class="btn">Download CV</a>
+
+            </div>
+            <div class="tab-2">
+                <img src="./images/Contact-Page-Image.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © 2024 Krishnansh Gupta. Created and Edited by Krishnansh Gupta.</p>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){ 
+        for(tablink of tablinks){
+            tablink.classList.remove("tab-current");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("current");
+        }
+
+        event.currentTarget.classList.add("tab-current");
+        document.getElementById(tabname).classList.add("current");
+    }
+</script>
+
+<script>
+    var sideMenu = document.getElementById("sidemenu");
+
+    function openMenu() {
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        sideMenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

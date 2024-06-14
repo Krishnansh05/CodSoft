@@ -1,0 +1,476 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #fff; 
+    background-color: #262626;
+    opacity: 1;
+    background-image: radial-gradient(#aec59b 1.75px, #262626 1.75px);
+    background-size: 37.45px 37.45px;
+    backdrop-filter: blur(1.5px);
+}
+/*---------------- Home section begins here---------------- */
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/Main-Background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 300px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:#81c14b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #81c14b;
+}
+
+/*---------------- About section begins here---------------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-basis: 35%;
+}
+
+.col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col-2{
+    flex-basis: 60%;
+}
+
+.col-2 p{
+    font-size: 18px;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tab-title{
+    display: flex;
+    margin: 20px 0px 40px;
+}
+
+.tab{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #81c14b;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab.tab-current::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.tab-contents ul li span{
+    color: #8dc65f;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.current{
+    display: block;
+}
+
+/* ----------------Projects section begins here----------------  */
+
+#project{
+    padding: 50px;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects img{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.write-up{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #81c14b);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.write-up h1{
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.write-up p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.write-up a{
+    padding: 10px;
+    color: #81c14b;
+    text-decoration: none;
+    line-height: 20px;
+    background: #fff;
+    width: fit-content;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.projects:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.projects:hover .write-up{
+    height: 100%;
+}
+
+.proj{
+    font-size: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+/* ----------------Contact section begins here----------------  */
+
+
+
+.tab-1{
+    flex-basis: 50%;
+}
+
+.tab-1 p{
+    margin: 20px 0;
+}
+
+.tab-1 span{
+    color: #81c14b;  
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.tab-1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.links{
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.links i{
+    transition: transform 0.3s;
+}
+
+.links i:hover{
+    color: #81c14b;
+    transform: translateY(-5px);
+}
+
+.btn{
+    width: fit-content;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #81c14b;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.tab-2{
+    flex-basis: 45%;
+}
+
+.tab-2 img{
+    width: 100%;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* -------------------Phone screen------------------ */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    .logo{
+        margin-top: 10px;
+        width: 200px;
+    }
+
+
+}
+nav .fa-solid{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .logo{
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    #main{
+        background-image: url(./images/Phone-Background.png);
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px 5%;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .header-text {
+        font-size: 16px;
+        margin-top: 95%;
+    }
+
+    .subtitle{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    -----------------------------About----------------------------------
+
+    .col-1, .col-2{
+        flex-basis: 100%;
+    }
+
+    .col-1 img{
+        margin-bottom: 20px;
+        width: 335px;
+    }
+
+    .col-2 p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .tab-title{
+        justify-content: center;
+    }
+
+    .tab{
+        font-size: 15px;
+        margin-right: 25px;
+    }
+
+    .tab-contents{
+        text-align: center;
+    }
+
+    .tab-2 img {
+        width: 100%;
+    }
+
+    .proj{
+        font-size: 24px;
+    }
+
+    ------------------------sidemenu---------------------
+    nav ul {
+        display: none;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    #sidemenu {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        padding-top: 50px;
+        height: 100vh;
+        background:#81c14b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.3s ease;
+    }
+
+    #sidemenu ul {
+        flex-direction: column;
+    }
+
+    #sidemenu ul li {
+        margin: 20px 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+----------Contact----------
+
+    #contact{
+        padding: 0 50px;
+    }
+    .tab-1, .tab-2{
+        flex-basis: 100%;
+    }
+
+    .tab-1{
+        margin-bottom: 50px;
+    }
+
+    .tab-1 p{
+        margin-left: 20px  
+    }
+
+    .copyright{
+        font-size: 10px;
+    }
+}
