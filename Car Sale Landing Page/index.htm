@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/car-logo.png" class="logo" alt="">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Gallery</a>
+                <a href="#">Login In</a>
+                <a href="#">Sign Up</a>
+            </div>
+
+            <div class="social">
+                <a href="wwww.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Powerful, Fun and</h4>
+            <h1>Fierce to <br> <span>Drive</span></h1>
+            <p>Real Poise, Real Power, Real Perfomance.</p>
+            <a href="#" class="btn">book a test ride</a>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2024 Krishnansh Gupta. Created and Edited by Krishnansh Gupta.</p>
+    </footer>
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(images/bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(images/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>
